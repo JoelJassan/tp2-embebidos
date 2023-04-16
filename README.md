@@ -2,4 +2,4 @@
 
 - Compilacion:
 
-- Autor: Joel Jassan
+- Autor: Jassan, Joel
