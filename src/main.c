@@ -8,6 +8,7 @@
 
 /*---  Includes  ------------------------------------------------------------------------------- */
 #include "alumno.h"
+#include <stdio.h>
 
 /*---  Macros and Definitions  ----------------------------------------------------------------- */
 
@@ -41,14 +42,14 @@ int main(void) {
         //las comillas dobles ponen un CERO al final, las comillas simples no
     char cadena[128];     
 
-
+    
     if(Serializar(& alumno_1,cadena, sizeof(cadena)) >= 0)  {
         printf("%s\n", cadena);
     }    //&: direccion de memoria de...
     else{
         printf("Error al serializar\n");
     };
-
+    
     return 0;
 }
 
