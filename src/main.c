@@ -36,20 +36,15 @@
 
 /**
  * @brief Funcion princial del codigo.
- * Aqui se establece el loop infinito.
- * @return Nada relevante
+ * Serializa los datos del alumno_1 (datos en memoria), si es que puede.
+ * @return Nada relevante. Se toma como resultado lo que se imprime en pantalla.
  */ 
 int main(void) {
-    
-    /**
-     * @brief Definicion de alumno_1
-     * @note Estructura global (static) pasada a flash (const)
-     * @note El uso de comillas dobles pone un cero al final de la cadena
-     */
+
     static const alumno_t alumno_1 = {
-        .apellido = "Jassan",   //!< Establece apellido del alumno
-        .nombre = "Joel",       //!< Establece nombre del alumno
-        .documento = 41870435   //!< Establece documento del alumno
+        .apellido = "Jassan",
+        .nombre = "Joel",    
+        .documento = 41870435
     };
     char cadena[128];     
 
